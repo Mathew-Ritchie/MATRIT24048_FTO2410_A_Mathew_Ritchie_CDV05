@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #2b2f37;
+  --secondary-color: #21202c;
+  --primary-font-color: white;
+  --secondary-font-color: #828fa3;
+  --primary-box-shadow: 0px 8px 18px 0px rgba(45, 45, 60, 0.56);
+}
+
+body {
+  box-sizing: border-box;
+  /* width: 100vw; */
+  height: 100vh;
+  margin: 0;
+}
+
+.nav-bar {
+  display: none;
+}
+
+.header-container {
+  /* width: 100vw; */
+  /* border: 2px solid red; */
+  background-color: var(--primary-color);
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.header-img {
+  width: 100px;
+}
+
+.intro-div {
+  display: grid;
+  width: min-content;
+  grid-column-gap: 1rem;
+  grid-template-areas:
+    "img title"
+    "img subtitle";
+  grid-template-columns: min-content max-content;
+  background-color: var(--secondary-font-color);
+  width: min-content;
+}
+
+.intro-img {
+  max-width: 100%;
+}
+
+.amout-me-div {
+  border: 2px solid red;
+  height: 500px;
+}
+
+.my-projects-div {
+  border: 2px solid red;
+  height: 500px;
+}
+
+.contact-div {
+  border: 2px solid red;
+  height: 500px;
+}

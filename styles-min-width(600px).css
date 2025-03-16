@@ -1,0 +1,8 @@
+@media (min-width: 600px) {
+  .intro-img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+}
