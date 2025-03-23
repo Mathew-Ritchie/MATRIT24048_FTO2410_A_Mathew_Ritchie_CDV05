@@ -1,9 +1,25 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
-  --primary-color: #2b2f37;
-  --secondary-color: #21202c;
-  --primary-font-color: white;
-  --secondary-font-color: #828fa3;
-  --primary-box-shadow: 0px 8px 18px 0px rgba(45, 45, 60, 0.56);
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clt-dark: #303030;
+  --clr-accent: #ffae03;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -11,6 +27,10 @@ body {
   /* width: 100vw; */
   height: 100vh;
   margin: 0;
+}
+
+section {
+  padding: 5em 2em;
 }
 
 .nav-bar {
@@ -35,19 +55,38 @@ body {
 }
 
 .intro-div {
-  display: grid;
-  width: min-content;
-  grid-column-gap: 1rem;
-  grid-template-areas:
-    "img title"
-    "img subtitle";
-  grid-template-columns: min-content max-content;
-  background-color: var(--secondary-font-color);
-  width: min-content;
+  position: relative;
 }
 
 .intro-img {
   max-width: 100%;
+}
+
+.intro-title {
+  line-height: 1;
+  margin: 0;
+  font-weight: var(--fw-reg);
+  margin-bottom: 0.25em;
+  /* font-size: 80px; */
+  font-weight: var(--fw-reg);
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+.intro-subtitle {
+  display: inline-block;
+  background: var(--clr-accent);
+  padding: 0.25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.intro-img {
+  box-shadow: var(--bs);
 }
 
 .amout-me-div {
