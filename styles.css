@@ -40,7 +40,7 @@ section {
 .header-container {
   /* width: 100vw; */
   /* border: 2px solid red; */
-  background-color: var(--primary-color);
+  background-color: var(--clt-dark);
 }
 
 .header-div {
@@ -90,7 +90,7 @@ strong {
 }
 
 .amout-me-div {
-  border: 2px solid red;
+  background-color: var(--clt-dark);
   height: 500px;
 }
 
@@ -100,6 +100,48 @@ strong {
 }
 
 .contact-div {
-  border: 2px solid red;
-  height: 500px;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 200px; */
+  background-color: var(--clt-dark);
+  color: var(--clr-light);
+  padding: 20px 0px;
+}
+
+.header-mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contct-title {
+}
+
+.contact-email {
+  font-size: x-large;
+  color: var(--clr-light);
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.social-list__link {
+  font-size: 50px;
+  color: var(--clr-accent);
+}
+
+.social-list__item {
+}
+
+.fa-brands {
 }

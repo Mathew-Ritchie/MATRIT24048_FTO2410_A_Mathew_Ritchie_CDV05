@@ -1,14 +1,13 @@
 @media (min-width: 600px) {
-  body {
-  }
-
+  /* ________________________________________________Intro/hero________________________________________________ */
   .intro-div {
     display: grid;
     width: min-content;
     margin: 0 auto;
     grid-column-gap: 1em;
     grid-template-areas:
-      "img title"
+      "img title1"
+      "img title2"
       "img subtitle";
     grid-template-columns: min-content max-content;
   }
@@ -23,15 +22,44 @@
   .intro-title {
     font-size: xx-large;
     text-wrap: wrap;
+    grid-area: title1;
+    align-self: self-end;
+    font-weight: lighter;
+  }
+
+  .intro-title-2 {
+    font-size: 50px;
+    grid-area: title2;
+    font-weight: bolder;
   }
 
   .intro-subtitle {
     align-self: start;
     grid-column: -1 / 1;
-    grid-row: 2;
+    grid-row: 3;
     text-align: right;
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
   }
+}
+
+/* ________________________________________________projects________________________________________________ */
+
+.my-projects-div {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-imgs-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-img {
+  max-width: 250px;
 }
