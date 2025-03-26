@@ -54,6 +54,8 @@ section {
   width: 100px;
 }
 
+/* ________________________________________________Intro________________________________________________ */
+
 .intro-div {
   position: relative;
 }
@@ -89,15 +91,35 @@ strong {
   box-shadow: var(--bs);
 }
 
-.amout-me-div {
+/* ________________________________________________About me________________________________________________ */
+
+.about-me-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--clt-dark);
-  height: 500px;
+  min-height: fit-content;
+  color: #fff;
 }
 
-.my-projects-div {
-  border: 2px solid red;
-  height: 500px;
+.about-me-img {
+  width: 300px;
+  border-radius: 10px;
 }
+
+/* ________________________________________________projects________________________________________________ */
+
+.my-projects-div {
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+/* _______________________________________________Contacts________________________________________________ */
 
 .contact-div {
   /* border: 2px solid red; */
@@ -123,6 +145,10 @@ strong {
 
 .contact-email {
   font-size: x-large;
+  color: var(--clr-accent);
+}
+
+.contact-email:hover {
   color: var(--clr-light);
 }
 
@@ -138,6 +164,10 @@ strong {
 .social-list__link {
   font-size: 50px;
   color: var(--clr-accent);
+}
+
+.social-list__link:hover {
+  color: var(--clr-light);
 }
 
 .social-list__item {
