@@ -42,53 +42,70 @@
     left: -1.5em;
     width: calc(100% + 1.5em);
   }
-}
 
-/* ________________________________________________About me________________________________________________ */
+  /* ________________________________________________About me________________________________________________ */
 
-.about-me-grid {
-  display: grid;
-  grid-column-gap: 1em;
-  grid-template-areas:
-    "content img"
-    "content img"
-    "content img"
-    "content img"
-    "content img";
-  grid-template-columns: 300px min-content;
-  width: min-content;
-  margin: 0 auto;
-}
+  .about-me-grid {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "content img"
+      "content img"
+      "content img"
+      "content img"
+      "content img";
+    grid-template-columns: 300px min-content;
+    width: min-content;
+    margin: 0 auto;
+  }
 
-.about-me-img {
-  grid-area: img;
-  padding-bottom: 30px;
-}
+  .about-me-heading {
+    color: var(--clr-accent);
+  }
 
-.about-me-p {
-  grid-area: content;
-}
+  .about-me-img {
+    grid-area: img;
+    padding-bottom: 50px;
+  }
 
-/* ________________________________________________projects________________________________________________ */
+  .about-me-p {
+    grid-area: content;
+    font-size: 19px;
+    font-weight: 200;
+  }
 
-.my-projects-div {
-  min-height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  margin-bottom: 50px;
-}
+  /* ________________________________________________projects________________________________________________ */
 
-#project-imgs-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
+  .my-projects-div {
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
 
-.project-img {
-  max-width: 300px;
+  #project-imgs-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .project-img {
+    max-width: 300px;
+  }
+
+  .nav-bar {
+    /* display: none; */
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: var(--clt-dark);
+    z-index: 5;
+  }
 }

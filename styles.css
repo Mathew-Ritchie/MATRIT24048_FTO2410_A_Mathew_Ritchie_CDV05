@@ -35,6 +35,13 @@ section {
 
 .nav-bar {
   display: none;
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  background-color: var(--clt-dark);
+  z-index: 5;
 }
 
 .header-container {
@@ -103,9 +110,24 @@ strong {
   color: #fff;
 }
 
+.about-me-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-heading {
+  color: var(--clr-accent);
+}
+
 .about-me-img {
   width: 300px;
   border-radius: 10px;
+}
+
+.about-me-p {
+  padding: 20px 30px;
 }
 
 /* ________________________________________________projects________________________________________________ */
@@ -117,6 +139,26 @@ strong {
   justify-content: center;
   align-items: center;
   gap: 50px;
+}
+
+.my-projects-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-imgs-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+
+.project-img {
+  max-width: 300px;
 }
 
 /* _______________________________________________Contacts________________________________________________ */
