@@ -111,7 +111,7 @@
     height: 300px;
     position: fixed;
     top: 36.8%;
-    left: 87%;
+    left: 87.5%;
     transform: translate(-50%, -50%);
     background-color: var(--clt-dark);
     z-index: 5;
