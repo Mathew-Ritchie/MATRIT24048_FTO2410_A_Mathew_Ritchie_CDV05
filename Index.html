@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mathew Ritchie Portfoli</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles-min-width(600px).css" />
@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header-container">
+    <header class="header-container" id="header-container">
       <div class="header-div">
         <img
           class="header-img"
@@ -23,15 +23,17 @@
 
     <!-- Main Body -->
     <main>
+      <div class="spacer" id="intro-spacer"></div>
       <!-- intro -->
-      <section class="intro-div">
+      <section class="intro-div" id="intro-div">
         <h1 class="intro-title">Hi, I am</h1>
         <strong class="intro-title-2">Mathew Ritchie</strong>
         <p class="intro-subtitle">Welcome to my portfolio</p>
         <img class="intro-img" src="/resources /me.jpeg" alt="profile picture of Mathew Ritchie" />
       </section>
 
-      <div class="about-me-div">
+      <div class="about-spacer" id="about-spacer"></div>
+      <div class="about-me-div" id="about-me-div">
         <h1 class="about-me-heading">Amout me</h1>
         <div class="about-me-grid">
           <img class="about-me-img" src="./resources /boat.jpg" />
@@ -48,18 +50,51 @@
         </div>
       </div>
 
-      <div class="my-projects-div">
+      <div class="project-spacer" id="project-spacer"></div>
+      <div class="my-projects-div" id="my-projects-div">
         <h1>Projects</h1>
         <div id="project-imgs-div">
-          <img class="project-img" src="./resources /project2.png" />
-          <img class="project-img" src="./resources /project2.png" />
-          <img class="project-img" src="./resources /project2.png" />
+          <div class="project-img-wrapper">
+            <a
+              href="https://github.com/Mathew-Ritchie/SDF_Portfolio_Piece_MATRIT24048_FTO1024_B_Mathew-Ritchie_SDF11"
+              target="_blank"
+              ><div class="container">
+                <img src="/resources /SDF-pic.png" alt="Avatar" class="image" style="width: 100%" />
+                <div class="middle">
+                  <div class="text">Click to see my repo</div>
+                </div>
+              </div></a
+            >
+            <p>
+              <strong>Bank landing page</strong> <br /><br />HTML and CSS project<br /><br />This
+              project was my first portfolio assignment at Codespace. It Showcases the use of HTML
+              and CSS with the Tailwind framework.
+            </p>
+          </div>
+          <div class="project-img-wrapper">
+            <a
+              href="https://github.com/Mathew-Ritchie/JSL_Portfolio_Piece_MATRIT24048_FTO2410_B_Mathew--Ritchie_JSL11"
+              target="_blank"
+              ><div class="container">
+                <img src="/resources /JSL-pic.png" alt="Avatar" class="image" style="width: 100%" />
+                <div class="middle">
+                  <div class="text">Click to see my repo</div>
+                </div>
+              </div></a
+            >
+            <p>
+              <strong>Agile board app</strong> <br /><br />JavaScript project<br /><br />This
+              project was my second portfolio assignment at Codespace. It Showcases the use of
+              vanilla Javascript to manipulate the DOM, import data and store in on localstorage,
+              and edit and delete tasks from the local storage.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="contact-div">
+      <div class="contact-div" id="contact-div">
         <div class="header-mail">
-          <h1 class="contact-title">I would love for you to get in touch</h1>
+          <h1 class="contact-title">I would love for you to get in touch!</h1>
           <a class="contact-email" href="blank" target="_blank">ritchmat89@gmail.com</a>
         </div>
         <div>
@@ -91,11 +126,15 @@
       </div>
 
       <!-- Nav Bar -->
-      <nav class="nav-bar">
-        <button>Introduction</button>
-        <button class="about-me-container">About Me</button>
-        <button></button>
+      <nav class="nav-bar" id="nav-bar">
+        <div class="nav-bar-div">
+          <a href="#intro-spacer"><button class="nav-btn">Introduction</button></a>
+          <a href="#about-spacer"><button class="nav-btn">About Me</button></a>
+          <a href="#project-spacer"><button class="nav-btn">Projects</button></a>
+          <a href="#contact-div"><button class="nav-btn">contact</button></a>
+        </div>
       </nav>
     </main>
+    <script src="scripts.js" type="module" defer></script>
   </body>
 </html>
