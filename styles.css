@@ -29,9 +29,7 @@ body {
   margin: 0;
 }
 
-/* section {
-  padding: 5em 2em;
-} */
+/* ________________________________________________Nav bar________________________________________________ */
 
 .nav-bar {
   display: none;
@@ -64,6 +62,8 @@ body {
   font-weight: bolder;
   cursor: pointer;
 }
+
+/* ________________________________________________Header________________________________________________ */
 
 .header-container {
   width: 100vw;
@@ -303,10 +303,4 @@ strong {
 
 .social-list__link:hover {
   color: var(--clr-light);
-}
-
-.social-list__item {
-}
-
-.fa-brands {
 }
